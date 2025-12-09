@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://btkjymc78ap8d"]
+[gd_scene load_steps=4 format=3 uid="uid://btkjymc78ap8d"]
 
 [ext_resource type="PackedScene" uid="uid://dmv50krf4bo5r" path="res://lessons/ship.tscn" id="2_2j1u5"]
 [ext_resource type="PackedScene" uid="uid://bxfevggvxo634" path="res://assets/background/space_background.tscn" id="3_e6xy1"]
+[ext_resource type="Texture2D" uid="uid://dknpi2mq4dhpa" path="res://assets/health_icon.svg" id="3_etm7e"]
 
 [node name="Level" type="Node2D"]
 
@@ -9,3 +10,21 @@
 position = Vector2(946, 546)
 
 [node name="SpaceBackground" parent="." instance=ExtResource("3_e6xy1")]
+
+[node name="Healthpack" type="Area2D" parent="."]
+
+[node name="Healthpack2" type="Area2D" parent="."]
+
+[node name="Healthpack3" type="Area2D" parent="."]
+
+[node name="HealthIcon" type="Sprite2D" parent="."]
+position = Vector2(795, 433)
+texture = ExtResource("3_etm7e")
+
+[node name="HealthIcon2" type="Sprite2D" parent="."]
+position = Vector2(796, 731)
+texture = ExtResource("3_etm7e")
+
+[node name="HealthIcon3" type="Sprite2D" parent="."]
+position = Vector2(1082, 659)
+texture = ExtResource("3_etm7e")
